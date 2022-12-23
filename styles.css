@@ -1,5 +1,9 @@
 @import url(//db.onlinewebfonts.com/c/7d460b18433753a097e5bc2bad7c8dd9?family=Norse);
 @font-face {font-family: "Norse"; src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot"); src: url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.woff") format("woff"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/7d460b18433753a097e5bc2bad7c8dd9.svg#Norse") format("svg"); } 
+:root{
+    --color: #e6007e;
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -43,16 +47,65 @@ h1{
     display: flex;
     flex-flow: column nowrap;
     justify-content: center;
-    padding-left: 3vw;
-    
 
 }
 .dummy-text{
     font-weight: 500;
     width: 90%;
     font-size: 1.2rem;
+    padding-left: 3vw;
 }
 
 .call-to-action{
     margin: 40px 0 80px;
+    padding-left: 3vw;
+}
+.form-first-row,
+.form-second-row,
+.form-third-row{
+    display:flex;
+    flex-direction: row;
+}
+.input-pair{
+    display: flex;
+    flex-direction:column;
+    margin-right: 30px;
+}
+label {
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+input{
+    border: 1px solid rgb(77, 77, 77);
+    border-radius: 3px;
+}
+input:focus{
+    outline: none;
+    border: 2px solid var(--color);
+}
+.form {
+    margin-left: 0;
+    box-shadow: 0 10px 20px -2px rgb(86, 85, 85);
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 3vw;
+}
+.button-container{
+    padding-left: 3vh;
+}
+button{
+    background-color: rgba(0, 0, 0, 0);
+    color: black;
+    font-weight: 700;
+    font-size: 1.2em;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px 40px;
+    margin: 40px 0;
+}
+button:hover{
+    background-color: var(--color);
+    color: black;
+    
 }
